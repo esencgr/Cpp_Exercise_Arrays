@@ -22,6 +22,7 @@ int main()
    
 
    return 0;
+
 }
 
 int get_highest(int a[][NUM_TESTS], int row, int col)
