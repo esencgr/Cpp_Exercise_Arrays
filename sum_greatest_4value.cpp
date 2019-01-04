@@ -16,10 +16,10 @@ int main(){
         }
     cout << endl;
     int min = n[0];
-    for (int i=0; i<=size-1; i++){
-        if (min > n[i])
-            min = n[i];
-    }
+        for (int i=0; i<=size-1; i++){
+            if (min > n[i])
+               min = n[i];
+        }
 
     cout << " minimum value =" << min << endl;
     cout << " sum of all =" << sum << endl;
