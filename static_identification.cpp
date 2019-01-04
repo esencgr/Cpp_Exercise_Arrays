@@ -21,7 +21,7 @@ void array_automatic(void){
         a[i]+=5;
         cout << a[i] << " ";
     }
-     cout << endl;    
+     cout << endl;
 }
 void array_static(void){
     static int a[3];

@@ -6,5 +6,5 @@ int main(int argc, char **argv)
     int array[5];
     cout << "array = " << array << endl;
     cout << "&array = " << &array << endl;
-    cout << "&array[0] = " << &array[0] << endl;  
+    cout << "&array[0] = " << &array[0] << endl;
 }

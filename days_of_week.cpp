@@ -14,15 +14,15 @@ int main(){
             break;
     }
     cout << " today is " << count << ". day in week" << endl;
-    
+
     cout << " number of will pass days = " ;
     cin >> total;
-    
+
        if (total < 7)
            index = count + total-1;
-       else 
+       else
            index = (count + total-1) % 7;
-           
+
     cout <<" The day after " << total << " days --> " << days[index] << endl;
 return 0;
 }

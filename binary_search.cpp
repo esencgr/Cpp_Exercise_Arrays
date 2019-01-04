@@ -9,28 +9,28 @@ int binary_search (int a[],int value){
                 return i;
             else if (a[i] > value)
                 finish = i - 1;
-            else 
+            else
                 start = i + 1;
         }
  return -1;
 }
 int main(){
-    
+
     int array[size] = { 2,4,6,8,10,12,14,16,18,20};
     cout << "array = ";
     for (int k=0; k<size; k++)
         cout << array[k] << " ";
     cout << endl << endl;
-    
+
     int value;
     cout << "searched value =" ;
     cin >> value;
-    
+
     int position = binary_search (array,value);
- 
+
     if (position == -1)
         cout << "searched value not find in array..." << endl << endl;
-    else 
+    else
         cout << "searched value find in " << position << ". indeces.." << endl << endl;
 return 0;
 }

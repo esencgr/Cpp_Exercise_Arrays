@@ -1,5 +1,5 @@
 #include <iostream>
-#include <math.h> 
+#include <math.h>
 #include <time.h>
 #include <stdlib.h>
 #define size 2
@@ -36,19 +36,19 @@ void matrix_product(int a[size][size], int b[size][size]){
     cout << endl;
     }
 }
-int main(){  
+int main(){
     int a[size][size], b[size][size];
-    
+
     cout << "enter array elements = " << endl;
     matrix_enter (a);
     cout << "--a array--" << endl;
     matrix_print (a);
-    
+
     cout << "enter array element" << endl;
     matrix_enter (b);
      cout << "--b array--" << endl;
     matrix_print (b);
-    
+
     cout << " -- matrix product --" << endl;
     matrix_product(a,b);
 return 0;

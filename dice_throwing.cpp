@@ -13,10 +13,10 @@ int main(){
             value = 1 + rand() % 6;
             ++frequency[value];
         }
-    cout << "value\t" << "frequency"<< endl; 
-        
+    cout << "value\t" << "frequency"<< endl;
+
         for (int value=1; value<=size-1; value++)
-            cout << value << "\t" << frequency[value] << endl;         
- 
+            cout << value << "\t" << frequency[value] << endl;
+
     return 0;
 }

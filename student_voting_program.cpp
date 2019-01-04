@@ -19,16 +19,16 @@ int main(){
             if (count % 10 == 0 )
                 cout << endl;
         }
-        
+
         for (response=0; response<=answer_size-1; response++)
             ++frequency [answers [response]];
-        
+
         cout << endl;
         cout << "-- voting result --" << endl;
         cout << "voting\t" << "frequency" << endl;
-        
+
         for (voting=1; voting <= freq_size-1; voting++)
             cout << voting << "  \t" << frequency[voting] << endl;
-        
+
     return 0;
 }

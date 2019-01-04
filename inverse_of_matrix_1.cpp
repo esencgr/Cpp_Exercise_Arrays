@@ -10,39 +10,39 @@ int main(){
     int size;
     cout << " enter array's size = ";
     cin >> size;
-    
+
     double a[size][size],b[size][size];
-    
+
     cout << "--a array--" << endl;
     for (int i=0; i<size; i++){
         for (int j=0; j<size; j++){
-             a[i][j] = 1 + rand() % 8;  
+             a[i][j] = 1 + rand() % 8;
              cout << a[i][j] << "\t";
         }
     cout << endl;
     }
-    
+
     cout << "-- unit matrix --" << endl;
     for (int i=0; i<size; i++){
         for (int j=0; j<size; j++){
              if ( i == j)
                 b[i][j] = 1;
-             else 
+             else
                 b[i][j] = 0;
         cout << b[i][j] << "\t";
         }
     cout << endl;
     }
-    
+
     cout << "--inverse matrix --" << endl;
     double d,k;
     for (int i=0; i<size; i++) {
         d = a[i][i];
         for (int j=0; j<size; j++){
             a[i][j] = a[i][j] / d;
-            b[i][j] = b[i][j] / d;            
+            b[i][j] = b[i][j] / d;
         }
-        
+
         for (int x=0; x<size; x++){
             if (x != i){
                 k = a[x][i];
@@ -59,5 +59,5 @@ int main(){
              cout << (double)b[i][j] << " \t";
     cout << endl;
     }
-    
+
 }

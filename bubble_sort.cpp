@@ -18,24 +18,24 @@ void bubble_sort (int b[],int size){
 int main(){
     srand(time(NULL));
     int size;
-    
+
     cout << "enter size = ";
     cin >> size;
-    cout << "array = "; 
-    
+    cout << "array = ";
+
     int n[size];
         for (int i=0; i<size; i++){
             n[i] = 1 + rand() % 6;
             cout << n[i] << "  ";
         }
     cout << endl;
-    
+
     bubble_sort (n,size);
-        
-    cout << "buble sort array = "; 
+
+    cout << "buble sort array = ";
         for (int i=0; i<size; i++)
             cout << n[i] << "  ";
-        
+
     cout << endl;
-    
+
 }

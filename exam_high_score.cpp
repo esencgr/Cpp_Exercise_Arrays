@@ -1,5 +1,5 @@
 #include <iostream>
-#include <math.h> 
+#include <math.h>
 #include <time.h>
 #include <stdlib.h>
 #define NUM_STUDENTS 2
@@ -12,14 +12,14 @@ int main()
    int grades[NUM_STUDENTS][NUM_TESTS] = { {55, 60, 65},
                                            {85, 90, 95} };
    int high_test;
-   
+
    cout << " -- exam scores --" << endl;
    matrix_print (grades, NUM_STUDENTS, NUM_TESTS);
    cout << endl;
-   
+
    high_test = get_highest( grades, NUM_STUDENTS, NUM_TESTS);
-   cout << "high score = " << high_test << endl << endl ; 
-   
+   cout << "high score = " << high_test << endl << endl ;
+
 
    return 0;
 
