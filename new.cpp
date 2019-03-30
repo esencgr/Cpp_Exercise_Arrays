@@ -5,7 +5,7 @@
 #define SIZE 5
 using namespace std;
 int main(){
-  
+
   srand(time(0));
   int n [SIZE], sum = 0;
   cout << "input array : ";
