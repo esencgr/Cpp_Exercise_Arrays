@@ -3,7 +3,7 @@
 #define size 5
 using namespace std;
 void call_reference(int [],int);
-void call_value(int);
+int call_value(int);
 int main(){
     int a[size]={1,2,3,4,5};
 
@@ -22,14 +22,13 @@ int main(){
 
     cout << "\n-- array element call by value --"<< endl;
     cout << "a[0] = " << a[0] << endl;
-    call_value (a[0]);
-    cout << "a[0] = " << a[0] << endl << endl;
-    return 0;
+    int x = call_value (a[0]);
+    cout << "a[0] = " << a[0] ;
 }
 void call_reference(int b[],int x){
     for (int i=0; i<x; i++)
         b[i] *= 2;
 }
-void call_value (int c){
-    cout << "effect of call with a value = " << c*2 << endl;
+int call_value (int c){
+    return (c*2);
 }
